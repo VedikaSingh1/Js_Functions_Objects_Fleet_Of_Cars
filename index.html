@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice Fleet of Cars Operations</title>
+  </head>
+  <body>
+    <h1>Check console for answers:</h1>
+    <p>
+      Problem Statement: You are given an array of objects representing a fleet
+      of cars.
+    </p>
+    <p>Each object has the following properties:</p>
+    <p>
+      - `make` (string): The make of the car (e.g., "Toyota," "Honda," "Ford").
+    </p>
+    <p>
+      - `model` (string): The model of the car (e.g., "Camry," "Civic,"
+      "F-150").
+    </p>
+    <p>- `year` (number): The year the car was manufactured.</p>
+    <p>- `mileage` (number): The mileage of the car in miles.</p>
+    <br />
+    <p>const fleet = [</p>
+    <p>{ make: "Toyota", model: "Camry", year: 2019, mileage: 30000 },</p>
+    <p>{ make: "Honda", model: "Civic", year: 2018, mileage: 25000 },</p>
+    <p>{ make: "Ford", model: "F-150", year: 2020, mileage: 40000 },</p>
+    <p>{ make: "Toyota", model: "Corolla", year: 2019, mileage: 28000 },</p>
+    <p>{ make: "Honda", model: "Accord", year: 2022, mileage: 15000 }</p>
+    <p>];</p>
+
+    <p>
+      console.log(getCarMakes(fleet)); // Output: ["Toyota", "Honda", "Ford"]
+    </p>
+    <p>
+      console.log(getCarsWithMileageGreaterThan(fleet, 30000)); // Output: Cars
+      with mileage greater than 30000
+    </p>
+    <p>console.log(sortCarsByYear(fleet)); // Output: Cars sorted by year</p>
+    <p>
+      console.log(getCarsByMake(fleet, "Toyota")); // Output: Cars by Toyota
+    </p>
+    <p>
+      console.log(getCarMakesWithMultipleModels(fleet)); // Output: ["Toyota",
+      "Honda"]
+    </p>
+    <p>console.log(getNewestCar(fleet)); // Output: Newest car object</p>
+    <script src="style.js"></script>
+  </body>
+</html>
